@@ -315,3 +315,22 @@ body {
     padding: 60px 10px;
     border-radius: 20px;
 }
+
+
+/* footer */
+
+footer h5 {
+    font-weight: 600;
+    font-family: var(--big-font);
+    color: #888;
+}
+
+footer li a {
+    font-family: var(--small-font);
+    color: #888;
+}
+
+footer p {
+    font-family: var(--small-font);
+    color: #888;
+}

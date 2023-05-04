@@ -1,0 +1,317 @@
+:root {
+    --small-font: 'Montserrat', sans-serif;
+    --big-font: 'Tilt Prism', cursive;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+
+/***************** navbar ************/
+
+.topColor {
+    background-color: #00000026;
+    color: #fff;
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav-link {
+    color: #eae2e2;
+    font-family: var(--small-font);
+    /* margin-left: 30px; */
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.scroll {
+    background-color: #fff;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.scroll a {
+    color: #292828;
+}
+
+.nav-item:hover {
+    color: #eae2e2!important;
+    border-bottom: 2px solid #f4a424;
+}
+
+.reg-btn {
+    background-image: linear-gradient(to right, #ff8a23, #ffc972);
+    border: 3px solid #5c5555d9;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: var(--small-font);
+}
+
+
+/***************** navbar-end ************/
+
+
+/* ************************ hero-section-start ***************************/
+
+.heroSection {
+    background-image: linear-gradient(to bottom right, #079a3275, #0505058a), url(../image/hero-bg.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: var(--big-font);
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+}
+
+.heroImg {
+    margin-top: 100px
+}
+
+.second-h1 {
+    color: #e37b21;
+}
+
+.paraBox {
+    font-family: var(--small-font);
+}
+
+.searchBox {
+    background-image: linear-gradient(to bottom right, #0f792e75, #050505f5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.searchSmBox {
+    display: flex;
+}
+
+.searchBox select {
+    background-color: #0000;
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--small-font);
+    border: 0;
+}
+
+.searchBox input {
+    background-color: #0000;
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--small-font);
+    border: 0;
+}
+
+.searchBox i {
+    color: #8af087;
+    font-size: 20px;
+}
+
+
+/* ************************ hero-section-end ***************************/
+
+
+/* ================================= popular-destination ===========================*/
+
+.popularDest {
+    padding: 100px 0;
+}
+
+.popularDest h1 {
+    font-family: var(--big-font);
+    font-size: 3rem;
+    color: #5f5f5f;
+}
+
+.popularDest h1 span {
+    color: #e37b21;
+}
+
+.owl-carousel {
+    padding: 50px 0;
+}
+
+.popCard {
+    padding: 10px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    font-family: var(--small-font);
+}
+
+.popCard img {
+    border-radius: 6px;
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookBtn {
+    border: 2px solid #ff942f;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: var(--small-font);
+    background-color: #00000005;
+    color: #ff902b;
+    font-weight: 600;
+}
+
+.owl-nav {
+    display: block !important;
+    font-size: 24px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    text-align: right;
+    color: #111010;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background-color: #fff;
+    color: inherit;
+    border: none;
+    padding: 2px 16px!important;
+    font: inherit;
+    font-size: 28px;
+    color: #ff8f29;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #ee8d32;
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+/* ================================= popular-destination ===========================*/
+
+
+/*====================================== stories ============================*/
+
+.storiesSection {
+    padding: 60px 0;
+}
+
+.storiesSection h1 {
+    font-family: var(--big-font);
+    font-size: 3rem;
+    color: #5f5f5f;
+}
+
+.storiesSection h1 span {
+    color: #e37b21;
+}
+
+.storiesSection p {
+    font-family: var(--small-font);
+    font-weight: 700;
+    color: #828282;
+}
+
+.numberBox {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--big-font);
+    font-size: 40px;
+    color: #e37b21;
+    font-weight: 700;
+}
+
+.numberBox>.box {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+}
+
+.numberBox p {
+    font-family: var(--small-font);
+    font-size: 15px;
+}
+
+
+/*====================================== stories-End ============================*/
+
+
+/*============================ about-adventure =======================*/
+
+#testimonial>.owl-nav {
+    display: block !important;
+    font-size: 24px;
+    position: relative;
+    top: -74px;
+    right: 0;
+    text-align: right;
+    color: #111010;
+}
+
+.fa-star {
+    color: #e37b21;
+}
+
+.owl-dots {
+    display: none;
+}
+
+
+/*============================ about-adventure-end =======================*/
+
+
+/*=========================== getstated ================================*/
+
+.getSection {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.getSection h1 {
+    font-family: var(--big-font);
+    font-size: 3rem;
+    color: #5f5f5f;
+}
+
+.getSection h1 span {
+    color: #e37b21;
+}
+
+.getSection p {
+    font-family: var(--small-font);
+    font-weight: 700;
+    color: #828282;
+}
+
+.start-btn {
+    background-image: linear-gradient(to right, #ff8a23, #ffc972);
+    border: 3px solid #16161602;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: var(--small-font);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.getstarted {
+    background-color: #ffe2c7;
+    padding: 60px 10px;
+    border-radius: 20px;
+}

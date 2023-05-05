@@ -59,10 +59,11 @@
 
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="userLoginReg/login.html" id="logdiv">Login</a>
+                        <!-- <a class="nav-link" href="userLoginReg/login.html">Logout</a> -->
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary reg-btn" href="#">Register</a>
+                        <a class="btn btn-primary reg-btn" href="userLoginReg/registration.html" id="registerDiv">Register</a>
                     </li>
                 </ul>
 
@@ -531,6 +532,33 @@
 
         window.addEventListener("scroll", navbarColour)
     </script>
+
+
+
+    <script>
+        let loginstatus = JSON.parse(localStorage.getItem("logStatus"))
+        let username = localStorage.getItem("username")
+        let logDiv = document.getElementById("logdiv")
+        let registerDiv = document.getElementById("registerDiv")
+
+        if (loginstatus == true) {
+            logDiv.innerText = username
+            registerDiv.innerText = "Logout"
+        } else {
+            logDiv.innerText = "Login"
+        }
+        registerDiv.addEventListener("click", function(e) {
+            e.preventDefault()
+            if (loginstatus == true) {
+                loginstatus = false
+
+                localStorage.removeItem("username");
+                window.open((location.href = "../index.html"))
+            }
+        })
+    </script>
+
+
 </body>
 
 

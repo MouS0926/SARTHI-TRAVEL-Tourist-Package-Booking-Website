@@ -18,6 +18,14 @@ function display(data) {
   cont.innerHTML = "";
 
   for (let i = 0; i < data.length; i++) {
+    let anchor = document.createElement("a");
+    anchor.setAttribute("href", "./destination.html");
+    anchor.addEventListener("click", function () {
+      let destination = [];
+      destination.push(data[i]);
+      localStorage.setItem("destination", JSON.stringify(destination));
+    });
+
     let card = document.createElement("div");
 
     let image = document.createElement("img");
@@ -39,7 +47,7 @@ function display(data) {
 
     box.append(rating, price);
     card.append(image, name, location, box);
-    // anchor.append(card);
-    cont.append(card);
+    anchor.append(card);
+    cont.append(anchor);
   }
 }

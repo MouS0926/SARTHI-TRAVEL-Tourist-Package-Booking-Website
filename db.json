@@ -29,8 +29,9 @@
             "id": 172002
         },
         {
-            "email": "m@mail.com",
-            "password": "123",
+            "name": "Rishi",
+            "email": "rk@mail.com",
+            "passward": "4321",
             "id": 172003
         }
     ],

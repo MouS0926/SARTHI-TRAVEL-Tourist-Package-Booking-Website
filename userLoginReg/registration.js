@@ -54,7 +54,7 @@ regform.addEventListener("submit", function(e) {
             } else {
                 register()
                 alert("registered")
-                window.location.href = "../login.html"
+                window.open((location.href = "userLoginReg/login.html"));
 
             }
         })

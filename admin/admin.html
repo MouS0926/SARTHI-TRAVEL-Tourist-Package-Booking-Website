@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admincss/normalize.css" />
+    <link rel="stylesheet" href="admincss/skeleton.css" />
+    <link rel="stylesheet" href="admincss/styles.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div class="controls">
+      <label for="search">Search by Name, Category Or BrandName</label>
+      <input type="search" id="search" placeholder="Search Here" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="columns four sidebar-one" id="sidebar-one">
+          <h4>Add Product</h4>
+          <input
+            type="text"
+            id="product-name"
+            class="u-full-width"
+            placeholder="Product Name"
+            required
+          />
+          <input
+            type="text"
+            id="product-image"
+            class="u-full-width"
+            placeholder="Image Url"
+          />
+          <input
+            type="text"
+            id="product-desc"
+            class="u-full-width"
+            placeholder="Description"
+          />
+          <input
+            type="text"
+            id="product-brand"
+            class="u-full-width"
+            placeholder="BrandName"
+          />
+          <input
+            type="number"
+            id="product-price"
+            class="u-full-width"
+            placeholder="Product Price"
+          />
+          <input
+            type="text"
+            id="product-category"
+            class="u-full-width"
+            placeholder="Product Category"
+          />
+          <button id="add-product" class="u-full-width button button-primary">
+            Add Product
+          </button>
+
+          <hr />
+          <h4>Update All Fields Of Product</h4>
+          <input
+            type="text"
+            id="update-product-id"
+            class="u-full-width"
+            placeholder="ID"
+          />
+          <input
+            type="text"
+            id="update-product-name"
+            class="u-full-width"
+            placeholder="ProductName"
+          />
+          <input
+            type="text"
+            id="update-product-image"
+            class="u-full-width"
+            placeholder="Image Url"
+          />
+          <input
+            type="text"
+            id="update-product-desc"
+            class="u-full-width"
+            placeholder="Description"
+          />
+          <input
+            type="text"
+            id="update-product-brand"
+            class="u-full-width"
+            placeholder="BrandName"
+          />
+          <input
+            type="number"
+            id="update-product-price"
+            class="u-full-width"
+            placeholder="Product Price"
+          />
+          <input
+            type="text"
+            id="update-product-category"
+            class="u-full-width"
+            placeholder="Product Category"
+          />
+          <button
+            id="update-product"
+            class="u-full-width button button-primary"
+          >
+            Update all fields
+          </button>
+          <hr />
+          <h4>Sort Based On Price</h4>
+          <button
+            id="sort-low-to-high"
+            class="u-full-width button button-primary"
+          >
+            Sort Low To High
+          </button>
+          <button
+            id="sort-high-to-low"
+            class="u-full-width button button-primary"
+          >
+            Sort High To Low
+          </button>
+          <hr />
+        </div>
+
+        <div class="columns eight main">
+          <div class="data-list-wrapper" id="data-list-wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    background-color: #f9f9f9;
+}
+
+.logo {
+    width: 300px;
+}
+
+.registrationSec {
+    padding: 100px;
+}
+
+.regisBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leftBox {
+    width: 50%;
+    background-image: linear-gradient(to top, #ff8a23, #e6730f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#regForm,
+#logForm {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.registerBTn {
+    background-image: linear-gradient(to top, #ff8a23, #e6730f);
+    border: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}

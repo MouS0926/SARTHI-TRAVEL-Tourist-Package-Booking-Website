@@ -425,6 +425,6 @@ footer p {
     }
     .navbar-toggler {
         border: var(--bs-border-width) solid rgb(244 164 36);
-        background-color: #fef1f1a3;
+        background-color: #aaa6a6a3;
     }
 }

@@ -40,10 +40,10 @@ function display(data) {
     let box = document.createElement("div");
 
     let rating = document.createElement("h4");
-    rating.innerText = `⭐ ${Number(data[i].rating) / 10}`;
+    rating.innerText = `⭐ ${Number(data[i].rating) / 20}`;
 
     let price = document.createElement("h4");
-    price.innerText = `$ ${data[i].price} / Person`;
+    price.innerText = `₹ ${Number(data[i].price) * 10} / Person`;
 
     box.append(rating, price);
     card.append(image, name, location, box);

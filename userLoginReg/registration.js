@@ -53,9 +53,8 @@ regform.addEventListener("submit", function(e) {
                 alert("Email already exist")
             } else {
                 register()
-                alert("registered")
-                window.open((location.href = "userLoginReg/login.html"));
-
+                alert("Registered Successfully")
+                window.open((location.href = "login.html"));
             }
         })
 })

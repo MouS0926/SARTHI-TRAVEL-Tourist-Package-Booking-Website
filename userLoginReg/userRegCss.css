@@ -42,3 +42,32 @@ body {
     letter-spacing: 1px;
     font-weight: 600;
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .logo {
+        width: 150px;
+    }
+    .registrationSec {
+        padding: 10px;
+    }
+    .regisBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .leftBox {
+        width: 100%;
+        padding: 10px;
+    }
+    #regForm,
+    #logForm {
+        width: 100%;
+    }
+    .leftBox h2 {
+        font-size: 20px;
+    }
+    .leftBox h4 {
+        font-size: 15px;
+    }
+}

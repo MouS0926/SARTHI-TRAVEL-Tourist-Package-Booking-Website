@@ -7,6 +7,10 @@ body {
     background-color: #f9f9f9;
 }
 
+img {
+    width: 100%;
+}
+
 
 /***************** navbar ************/
 
@@ -42,6 +46,10 @@ body {
 
 .scroll a {
     color: #292828;
+}
+
+.scroll a:hover {
+    color: #000
 }
 
 .nav-item:hover {
@@ -333,4 +341,90 @@ footer li a {
 footer p {
     font-family: var(--small-font);
     color: #888;
+}
+
+
+/*==================== responsive ===================================*/
+
+
+/*+++++++++++++++++++++ small-screen +++++++++++++++*/
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* STYLES HERE */
+    .popularDest h1,
+    .storiesSection h1,
+    .heroSection h1 {
+        font-size: 1.2rem;
+    }
+    .heroSection {
+        height: 340px;
+        padding: 90px 0 20px 0;
+    }
+    .paraBox {
+        font-size: 12px;
+    }
+    .searchBox select,
+    .searchBox input {
+        font-size: 11px;
+    }
+    .searchBox i {
+        color: #8af087;
+        font-size: 12px;
+    }
+    .reg-btn {
+        font-size: 10px;
+        padding: 4px;
+    }
+    .logo {
+        width: 130px;
+    }
+    .navbar-toggler {
+        border: var(--bs-border-width) solid rgb(244 164 36);
+        background-color: #fef1f1a3;
+    }
+    .popularDest {
+        padding: 60px 0 20px 0;
+    }
+    .storiesSection {
+        padding: 35px 0;
+    }
+    .storiesSection p {
+        font-size: 12px;
+    }
+    .numberBox {
+        font-size: 20px;
+    }
+    .numberBox p {
+        font-family: var(--small-font);
+        font-size: 11px;
+    }
+    .getSection h1 {
+        font-size: 1.5rem;
+    }
+    .getSection p {
+        font-size: 14px;
+    }
+    .start-btn {
+        font-size: 10px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    footer h5 {
+        font-size: 1rem;
+    }
+}
+
+
+/*======================== medium screen ======================*/
+
+@media screen and (min-device-width: 481px) and (max-device-width: 576px) {
+    .heroSection {
+        height: 400px;
+        padding: 90px 0 20px 0;
+    }
+    .navbar-toggler {
+        border: var(--bs-border-width) solid rgb(244 164 36);
+        background-color: #fef1f1a3;
+    }
 }

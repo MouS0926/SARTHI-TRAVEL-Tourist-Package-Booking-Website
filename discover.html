@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover- Sarthi Travel</title>
+    <style>
+      #box {
+        display: flex;
+        width: 100%;
+      }
+      #filter {
+        padding-top: 100px;
+        background-color: white;
+        width: 20%;
+        margin-left: 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* border: 1px solid red; */
+      }
+      #filter > select {
+        padding: 7px;
+        margin: 20px;
+        margin-bottom: 70px;
+        border: 1px solid teal;
+      }
+      #filter > label {
+        color: teal;
+        font-size: 22px;
+        padding: 10px;
+        margin-top: 30px;
+      }
+      #btnDiv {
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      #btnDiv > input {
+        padding: 5px;
+        width: 20%;
+        margin-left: 150px;
+      }
+      #btnDiv > button {
+        padding: 10px;
+        margin-left: 30px;
+        background-color: white;
+        border: 1px solid lightskyblue;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        width: 75%;
+        margin: auto;
+      }
+      #container > a {
+        text-decoration: none;
+      }
+      #container > a > div {
+        padding: 12px;
+        border-radius: 15px;
+        color: black;
+        background-color: white;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #container > a > div > h4 {
+        margin: 0px;
+        color: rgb(22, 53, 53);
+      }
+      #container > a > div > div {
+        margin: 0px;
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+        color: rgb(22, 53, 53);
+        justify-content: space-between;
+      }
+      #container img {
+        width: 100%;
+        height: 250px;
+        border-radius: 12px;
+      }
+      #travelImg {
+        margin: auto;
+        margin-bottom: 60px;
+        width: 95%;
+        text-align: center;
+        font-family: bradley hand, cursive;
+      }
+      #travelImg > img {
+        width: 100%;
+      }
+      body {
+        box-sizing: border-box;
+        background-color: #efefef;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="travelImg">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/001/128/259/original/travel-around-the-world-important-landmarks-poster-vector.jpg"
+        alt=""
+      />
+      <h1>Visit the famous places</h1>
+    </div>
+    <div id="btnDiv">
+      <button id="increase">Price -⬆️</button>
+      <button id="decrease">Price -⬇️</button>
+      <input type="text" placeholder="Search for Location" />
+    </div>
+    <div id="box">
+      <div id="filter">
+        <label for="">filter by Price range</label>
+        <br />
+        <select name="Price" id="priceSelect">
+          <option value="">Select price range</option>
+          <option value="500">below 500</option>
+          <option value="700">below 700</option>
+          <option value="1000">below 1000</option>
+        </select>
+        <br />
+        <label for="Rating">filter by Rating range</label>
+        <br />
+        <select name="" id="ratingSelect">
+          <option value="">Select price range</option>
+          <option value="3">below 3</option>
+          <option value="5">above 3</option>
+        </select>
+      </div>
+      <div id="container"></div>
+    </div>
+  </body>
+  <script src="./discover.js"></script>
+</html>

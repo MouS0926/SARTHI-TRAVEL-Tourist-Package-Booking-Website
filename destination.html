@@ -10,7 +10,7 @@
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
           rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
           rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        width: 55%;
+        width: 90%;
         padding: 25px;
         margin: auto;
         color: teal;
@@ -19,27 +19,97 @@
         width: 100%;
         margin: auto;
       }
+      #book {
+        width: 35%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        padding: 20px;
+        /* text-align: center; */
+      }
+      #box2 {
+        display: flex;
+        justify-content: space-around;
+      }
+      #conty {
+        width: 55%;
+      }
+      #detail {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+      }
+      #detail > select {
+        padding: 10px;
+      }
+      #bookBtn {
+        padding: 10px;
+        display: block;
+        margin: auto;
+        background-color: rgb(246, 30, 30);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        margin-top: 30px;
+      }
     </style>
   </head>
   <body>
-    <div id="conty"></div>
+    <div id="box2">
+      <div id="conty"></div>
 
-    <div id="book">
-      <h1>Book your journey here</h1>
-      <div id="detail">
-        <select name="" id="">
-          <option value="">Select your city</option>
-          <option value="Agartala">Agartala, Tripura, India</option>
-          <option value="Bengaluru">Bengaluru, Karnataka, India</option>
-          <option value="Bhopal">Bhopal, Madhya Pradesh, India</option>
-          <option value="Chandigarh">Chandigarh, Chandigarh, India</option>
-          <option value="Cochin">Cochin, Kerala, India</option>
-          <option value="Delhi">Delhi, NCT of Delhi, India</option>
-          <option value="Indore">Indore, Madhya Pradesh, India</option>
-          <option value="Jaipur">Jaipur, Rajasthan, India</option>
-          <option value="Mumbai">Mumbai, Maharashtra, India</option>
-          <option value="Dehradun">Dehradun, Uttarakhand, India</option>
-        </select>
+      <div id="book">
+        <h1>Book your journey here</h1>
+        <div id="detail">
+          <label for="">Select Your City</label>
+          <br />
+          <select name="" id="city">
+            <option value="">cities</option>
+            <option value="Agartala, Tripura, India">
+              Agartala, Tripura, India
+            </option>
+            <option value="Bengaluru, Karnataka, India">
+              Bengaluru, Karnataka, India
+            </option>
+            <option value="Bhopal, Madhya Pradesh, India">
+              Bhopal, Madhya Pradesh, India
+            </option>
+            <option value="Chandigarh, Chandigarh, India">
+              Chandigarh, Chandigarh, India
+            </option>
+            <option value="Cochin, Kerala, India">Cochin, Kerala, India</option>
+            <option value="Delhi, NCT of Delhi, India">
+              Delhi, NCT of Delhi, India
+            </option>
+            <option value="Indore, Madhya Pradesh, India">
+              Indore, Madhya Pradesh, India
+            </option>
+            <option value="Jaipur, Rajasthan, India">
+              Jaipur, Rajasthan, India
+            </option>
+            <option value="Mumbai, Maharashtra, India">
+              Mumbai, Maharashtra, India
+            </option>
+            <option value="Dehradun, Uttarakhand, India">
+              Dehradun, Uttarakhand, India
+            </option>
+          </select>
+          <br />
+          <label for="">Start Date</label>
+          <br />
+          <input type="date" name="start" id="startDate" />
+          <br />
+          <label for="">End Date</label>
+          <br />
+          <input type="date" name="end" id="endDate" />
+          <br />
+          <label for="">Number Of Persons</label>
+          <br />
+          <input type="number" name="" id="NoOfperson" />
+        </div>
+        <button id="bookBtn">BOOK NOW</button>
       </div>
     </div>
   </body>

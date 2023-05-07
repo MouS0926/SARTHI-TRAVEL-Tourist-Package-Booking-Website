@@ -200,9 +200,9 @@
 </head>
 
 <body> -->
-    <!--*******************************  navbar *******************-->
+<!--*******************************  navbar *******************-->
 
-    <!-- <nav class="navbar navbar-expand-lg fixed-top topColor" id="navBar">
+<!-- <nav class="navbar navbar-expand-lg fixed-top topColor" id="navBar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="image/logo-no-background.png" alt="" class="logo">
@@ -243,10 +243,10 @@
     </nav> -->
 
 
-    <!--*******************************  navbarEnd *******************-->
+<!--*******************************  navbarEnd *******************-->
 
 
-    <!-- <div class="box1">
+<!-- <div class="box1">
         <div class="div1" id="imgdiv1">
 
             <h2>Mountain Biking</h2>
@@ -368,7 +368,7 @@
     </footer> -->
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
     </script> -->
 
 <!-- </body>
@@ -576,18 +576,17 @@
         .nav-link:hover {
             color: #242222;
         }
-
+        
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
-
+        
         #content {
             margin: 50px;
             text-align: center;
         }
-
         /* #book-now-button {
             background-color: #4CAF50;
             color: white;
@@ -597,7 +596,7 @@
             cursor: pointer;
             border-radius: 4px;
         } */
-
+        
         .form-container {
             position: fixed;
             top: 50%;
@@ -608,54 +607,55 @@
             /* max-width: 400px; */
             transform: translate(-50%, -50%);
             padding: 20px;
-            background-color: #f4a424;;
+            background-color: #f4a424;
+            ;
             z-index: 9999;
             display: none;
             opacity: 0;
             transition: opacity 2s ease-in-out;
         }
-
+        
         .form-container.show {
             display: block;
             opacity: 1;
         }
-
+        
         .form-container h2 {
             margin-top: 0;
         }
-
+        
         .form-container p {
             text-align: center;
             color: white;
         }
-
+        
         .form-container label {
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
         }
-
+        
         .form-container input[type=text] {
             width: 100%;
             padding: 12px 20px;
             margin-bottom: 12px;
             box-sizing: border-box;
         }
-
+        
         .form-container input[type=number] {
             width: 100%;
             padding: 12px 20px;
             margin-bottom: 12px;
             box-sizing: border-box;
         }
-
+        
         .form-container input[type=email] {
             width: 100%;
             padding: 12px 20px;
             margin-bottom: 12px;
             box-sizing: border-box;
         }
-
+        
         .form-container input[type=submit] {
             background-color: #4CAF50;
             color: white;
@@ -666,7 +666,7 @@
             font-size: 16px;
             border-radius: 4px;
         }
-
+        
         .form-container .close-button {
             position: absolute;
             top: 10px;
@@ -687,12 +687,12 @@
                 <img src="image/logo-no-background.png" alt="" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
             <div class="collapse navbar-collapse float-xl-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Discover</a>
+                        <a class="nav-link" href="discover.html">Discover</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="service.html">Services</a>
@@ -710,10 +710,11 @@
 
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="userLoginReg/login.html" id="logdiv">Login</a>
+                        <!-- <a class="nav-link" href="userLoginReg/login.html">Logout</a> -->
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary reg-btn" href="#">Register</a>
+                        <a class="btn btn-primary reg-btn" href="userLoginReg/registration.html" id="registerDiv"></a>
                     </li>
                 </ul>
 
@@ -724,17 +725,16 @@
 
     <!--*******************************  navbarEnd *******************-->
 
-
     <div class="box1" id="un">
         <div class="div1" id="imgdiv1">
 
             <h2>Mountain Biking</h2>
-            <button id="book-now-button" >Book Now</button>
+            <button id="book-now-button">Book Now</button>
         </div>
 
         <div class="div1" id="imgdiv2">
             <h2>River Rafting</h2>
-            <button id="book-now-button1" >Book Now</button>
+            <button id="book-now-button1">Book Now</button>
         </div>
 
         <div class="div1" id="imgdiv3">
@@ -789,7 +789,7 @@
             <label for="Email">Email:</label>
             <input type="email" id="location" name="Email" required>
 
-            <p>We Contact You Soon  &#128525;</p>
+            <p>We Contact You Soon &#128525;</p>
 
             <input type="submit" value="Submit">
         </form>
@@ -868,47 +868,45 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
-
-
     </script>
-
+    <script src="userLoginReg/logstatus.js"></script>
     <script>
-      var overlay = document.getElementById("overlay");
+        var overlay = document.getElementById("overlay");
         var bookNowButton = document.querySelectorAll("#un button")
         var bookingForm = document.getElementById("booking-form");
         var closeButton = document.querySelector(".close-button");
-       
+
 
         bookNowButton.forEach(function(button) {
-  // Do something with each button
-  button.addEventListener("click", function() {
-          
-            
-            overlay.classList.add("show");
+            // Do something with each button
+            button.addEventListener("click", function() {
+
+
+                overlay.classList.add("show");
+            });
+
         });
 
-});
-        
-
-       
-    
 
 
-        
-            // price.value=300*name
+
+
+
+
+        // price.value=300*name
 
         bookingForm.addEventListener("submit", function(event) {
             event.preventDefault();
 
             // Get form values
             var name = document.getElementById("name").value;
-            
+
             var price = document.getElementById("price").value;
-            var location =document.getElementById("location").value
-            
-           // location.value="Manali"
+            var location = document.getElementById("location").value
+
+            // location.value="Manali"
             // You can perform further validation on the form values here
-           
+
             // Simulate booking process
             alert("Booking successful!\n\nNumber of People: " + name + "\nEmail: " + location + "\nContact Number: " + price);
 

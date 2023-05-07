@@ -4,6 +4,39 @@
         "name": "admin",
         "passward": "admin"
     }],
+    "bookPlaces":[{
+        "name": "Paro",
+        "location": "Scenic Small Town in Bhutan",
+        "image": "https://hblimg.mmtcdn.com/content/hubble/img/paro/mmt/destination/m_paro-landscape_l_400_640.jpg",
+        "rating": 70,
+        "price": 73,
+        "id": "1"
+    },
+    {
+        "name": "Bali",
+        "location": "Tropical Beach Paradise",
+        "image": "https://hblimg.mmtcdn.com/content/hubble/img/bali/mmt/destination/m_bali_l_393_629.jpg",
+        "rating": 97,
+        "price": 97,
+        "id": "2"
+    },
+    {
+        "name": "Bentota",
+        "location": "Fun-Packed Beach Destination in Sri Lanka",
+        "image": "https://hblimg.mmtcdn.com/content/hubble/img/bentota/mmt/destination/m_bentota-landscape_l_400_640.jpg",
+        "rating": 50,
+        "price": 63,
+        "id": "3"
+    },
+    {
+        "name": "Maldives",
+        "location": "A Stunning Tropical Getaway",
+        "image": "https://hblimg.mmtcdn.com/content/hubble/img/maldives/mmt/destination/m_Maldives_l_400_640.jpg",
+        "rating": 69,
+        "price": 74,
+        "id": "4"
+    }
+    ],
     "users": [{
             "id": 171999,
             "name": "Vijay Dodiya",

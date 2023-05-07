@@ -22,7 +22,7 @@
 //           <div class="card-body">
 //             <div class="card-title">${item.name}</div>
 //             <div class="card-title">₹ ${item.price}</div>
-//             <div class="card-brandName">${item.brandName}</div>
+//             <div class="card-location">${item.location}</div>
 //             <a href="#" data-id="${item.id}" class="card-link">Edit</a>
 //             <a href="#" data-id="${item.id}" class="card-link-del">Delete</a>
 //           </div>
@@ -54,7 +54,7 @@ const editInput = document.querySelector("#edit");
 
 async function fetchProduct() {
   try {
-    const response = await fetch("http://localhost:1999/products");
+    const response = await fetch("http://localhost:9971/destinations");
     const users = await response.json();
     renderCards(users);
     return users;
@@ -64,6 +64,7 @@ async function fetchProduct() {
 }
 
 function renderCards(users) {
+  console.log(users);
   cardsContainer.innerHTML = "";
 
   users.forEach((user) => {
@@ -80,12 +81,12 @@ function renderCards(users) {
 
     const boxdetails = document.createElement("div");
     boxdetails.classList.add("boxDetails");
-    const name = document.createElement("h2");
+    const name = document.createElement("h3");
     name.textContent = user.name;
     boxdetails.appendChild(name);
 
     const brand = document.createElement("p");
-    brand.textContent = `${user.brandName}`;
+    brand.textContent = `${user.location}`;
     boxdetails.appendChild(brand);
 
     const price = document.createElement("p");
@@ -100,7 +101,7 @@ function renderCards(users) {
       let del_id = user.id;
       try {
         const response = await fetch(
-          `http://localhost:1999/products/${del_id}`,
+          `http://localhost:9971/destinations/${del_id}`,
           {
             method: "DELETE",
           }
@@ -165,13 +166,13 @@ productCreateBtn.addEventListener("click", () => {
     name: productName,
     image: productImg,
     desc: productDesc,
-    brandName: productBrand,
+    location: productBrand,
     price: productPrice,
     category: productCategory,
   };
 
   console.log(newEmpObj);
-  fetch("http://localhost:1999/products", {
+  fetch("http://localhost:99/destinations", {
     method: "POST",
     body: JSON.stringify(newEmpObj),
     headers: {
@@ -200,7 +201,7 @@ let updateproductCreateBtn = document.getElementById("update-product");
 
 function updateAllPopulateProduct(changeid) {
   console.log(changeid);
-  fetch(`http://localhost:1999/products/${changeid}`)
+  fetch(`http://localhost:9971/destinations/${changeid}`)
     .then((res) => {
       return res.json();
     })
@@ -210,7 +211,7 @@ function updateAllPopulateProduct(changeid) {
       updateproductNameInput.value = data.name;
       updateproductImgInput.value = data.image;
       updateproductDescInput.value = data.desc;
-      updateproductBrandInput.value = data.brandName;
+      updateproductBrandInput.value = data.location;
       updateproductPriceInput.value = data.price;
       updateproductCategoryInput.value = data.category;
     })
@@ -233,7 +234,7 @@ updateproductCreateBtn.addEventListener("click", function (e) {
     name: updateproductName,
     image: updateproductImg,
     desc: updateproductDesc,
-    brandName: updateproductBrand,
+    location: updateproductBrand,
     price: updateproductPrice,
     category: updateproductCategory,
   };
@@ -331,7 +332,7 @@ function searchUsersByName(users, searchQuery) {
     return users.filter(
       (user) =>
         user.name.toLowerCase().includes(searchQuery) ||
-        user.brandName.toLowerCase().includes(searchQuery) ||
+        user.location.toLowerCase().includes(searchQuery) ||
         user.category.toLowerCase().includes(searchQuery)
     );
   }

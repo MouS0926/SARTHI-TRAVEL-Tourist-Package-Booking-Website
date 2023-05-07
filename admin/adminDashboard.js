@@ -18,34 +18,41 @@ themeToggler.addEventListener("click", () => {
   themeToggler.querySelector("span:nth-child(2)").classList.toggle("active");
 });
 
-fetch(`http://localhost:9971/destinations`)
-  .then((res) => res.json())
+fetch(`http://localhost:9971/bookPlaces`)
+  .then((res) => {
+    return res.json();
+  })
   .then((data) => {
+    console.log(data);
     let total = 0;
     let price = 0;
-
-    data.forEach((order) => {
-      total += order.price;
-      let income = (order.price * 25) / 100;
+    let adminDataAppend = document.getElementById("adminSiteBoxId");
+    let x = "";
+    data.forEach((visitor) => {
+      total += visitor.price;
+      let income = (visitor.price * 25) / 100;
       price += income;
-      const tr = document.createElement("tr");
-      const trContent = `
-                     
-                        <td>${order.title}</td>
-                        <td>${order.id}</td>
-                        <td>${order.category}</td>
-                        <td>${order.price}</td>
-                        <td>DONE</td>
-                    `;
-      tr.innerHTML = trContent;
-      document.querySelector("table tbody").appendChild(tr);
+      x += `
+      <div class="card">
+        <div class="card__image"> 
+        <img  src="${visitor.image}" alt="Image Error" />
+        </div>
+        <div class="card__infos">
+        <h1 id="card__name">${visitor.name}</h1>
+        <h2 id="card__location">${visitor.location}</h2>
+        <p id="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+   `;
+      adminDataAppend.innerHTML = x;
     });
+
     let dealsData = document.getElementById("total-deals");
     dealsData.innerText = data.length;
     let saleData = document.getElementById("total-sale");
-    saleData.innerText = total;
+    saleData.innerText = price;
     let incomeData = document.getElementById("income");
-    incomeData.innerText = price;
+    incomeData.innerText = total;
   });
 
 let logOut = document.getElementById("logout");

@@ -106,7 +106,7 @@
   font-size: 20px;
   color: #ffffff;
   border: 1px solid #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
 }
 .card > .boxImg {
@@ -115,6 +115,7 @@
 .card > .boxImg img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 .card > .boxDetails {
   width: 50%;
@@ -123,9 +124,17 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
+}
+.card > .boxDetails > h3 {
+  font-size: 35px;
+  color: red;
+}
+.card > .boxDetails > p {
+  font-size: 20px;
 }
 .card > .boxDetails > div button {
-  margin: 0 20px;
+  margin: 5px 20px;
   background-color: #33c3f0;
   border: #33c3f0;
   color: rgb(255, 255, 255);

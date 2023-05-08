@@ -30,7 +30,7 @@ User Features :
 
 Admin Features :
 - Destination management
-- Booking management
+- Booking Details
 
 
 ## Run Locally

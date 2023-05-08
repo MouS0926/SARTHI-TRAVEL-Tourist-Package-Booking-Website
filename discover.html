@@ -93,6 +93,13 @@
       #travelImg > img {
         width: 100%;
       }
+      #btnbox {
+        width: 10%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 60px;
+      }
       body {
         box-sizing: border-box;
         background-color: #efefef;
@@ -110,7 +117,7 @@
     <div id="btnDiv">
       <button id="increase">Price -⬆️</button>
       <button id="decrease">Price -⬇️</button>
-      <input type="text" placeholder="Search for Location" />
+      <input type="text" id="searchBar" placeholder="Search for Location" />
     </div>
     <div id="box">
       <div id="filter">
@@ -133,6 +140,7 @@
       </div>
       <div id="container"></div>
     </div>
+    <div id="btnbox"></div>
   </body>
   <script src="./discover.js"></script>
 </html>

@@ -65,6 +65,10 @@ img {
     font-family: var(--small-font);
 }
 
+.reg-btn:hover {
+    border: 3px solid #ee650ad9;
+}
+
 
 /***************** navbar-end ************/
 
@@ -138,6 +142,13 @@ img {
 
 /* ================================= popular-destination ===========================*/
 
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 .popularDest {
     padding: 100px 0;
 }
@@ -163,6 +174,17 @@ img {
     font-family: var(--small-font);
 }
 
+.popCard h3 {
+    font-weight: 700;
+    color: #5f5f5f;
+    padding-top: 10px;
+}
+
+.price-box span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .popCard img {
     border-radius: 6px;
 }
@@ -180,6 +202,12 @@ img {
     background-color: #00000005;
     color: #ff902b;
     font-weight: 600;
+}
+
+.bookBtn:hover {
+    background-color: #ff902b;
+    color: #fff;
+    border: 0;
 }
 
 .owl-nav {
@@ -344,6 +372,31 @@ footer p {
 }
 
 
+/*=========================== map-section =====================*/
+
+.mapSection h1 {
+    font-family: var(--big-font);
+    font-size: 3rem;
+    color: #5f5f5f;
+    text-align: center;
+}
+
+.mapSection h1 span {
+    color: #e37b21;
+}
+
+.mapSection p {
+    font-family: var(--small-font);
+    font-weight: 700;
+    color: #9c9999;
+    text-align: center;
+    line-height: 12px;
+}
+
+
+/*+++++++++++++++++++++++++++ map-section-end +++++++++++++++++++++*/
+
+
 /*==================== responsive ===================================*/
 
 
@@ -353,7 +406,8 @@ footer p {
     /* STYLES HERE */
     .popularDest h1,
     .storiesSection h1,
-    .heroSection h1 {
+    .heroSection h1,
+    .mapSection h1 {
         font-size: 1.2rem;
     }
     .heroSection {
@@ -382,13 +436,36 @@ footer p {
         border: var(--bs-border-width) solid rgb(244 164 36);
         background-color: #fef1f1a3;
     }
+    .owl-carousel .owl-item img {
+        height: 100px;
+    }
     .popularDest {
         padding: 60px 0 20px 0;
+    }
+    .popCard h3 {
+        font-size: 15px;
+    }
+    .price-box {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .price-box span {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .price-box p {
+        font-size: 12px;
+    }
+    .bookBtn {
+        font-size: 13px;
+        padding: 2px;
     }
     .storiesSection {
         padding: 35px 0;
     }
-    .storiesSection p {
+    .storiesSection p,
+    .mapSection p {
         font-size: 12px;
     }
     .numberBox {

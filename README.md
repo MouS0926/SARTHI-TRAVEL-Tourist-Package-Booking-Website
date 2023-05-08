@@ -1,5 +1,5 @@
-<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/image/logo-no-background.png"  width="600" height="300">
-![Logo](https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/image/logo-no-background.png?raw=true)
+<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/image/logo-no-background.png"  width="300" >
+
 
 
 

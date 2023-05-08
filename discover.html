@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discover- Sarthi Travel</title>
     <style>
-      #box {
+   #box {
         display: flex;
         width: 100%;
       }
@@ -104,43 +105,46 @@
         box-sizing: border-box;
         background-color: #efefef;
       }
+
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="travelImg">
-      <img
-        src="https://static.vecteezy.com/system/resources/previews/001/128/259/original/travel-around-the-world-important-landmarks-poster-vector.jpg"
-        alt=""
-      />
-      <h1>Visit the famous places</h1>
+        <img src="https://static.vecteezy.com/system/resources/previews/001/128/259/original/travel-around-the-world-important-landmarks-poster-vector.jpg" alt="" />
+        <h1>Visit the famous places</h1>
     </div>
     <div id="btnDiv">
+
       <button id="increase">Price -⬆️</button>
       <button id="decrease">Price -⬇️</button>
       <input type="text" id="searchBar" placeholder="Search for Location" />
+
     </div>
     <div id="box">
-      <div id="filter">
-        <label for="">filter by Price range</label>
-        <br />
-        <select name="Price" id="priceSelect">
+        <div id="filter">
+            <label for="">filter by Price range</label>
+            <br />
+            <select name="Price" id="priceSelect">
           <option value="">Select price range</option>
           <option value="500">below 500</option>
           <option value="700">below 700</option>
           <option value="1000">below 1000</option>
         </select>
-        <br />
-        <label for="Rating">filter by Rating range</label>
-        <br />
-        <select name="" id="ratingSelect">
+            <br />
+            <label for="Rating">filter by Rating range</label>
+            <br />
+            <select name="" id="ratingSelect">
           <option value="">Select price range</option>
           <option value="3">below 3</option>
           <option value="5">above 3</option>
         </select>
-      </div>
-      <div id="container"></div>
+        </div>
+        <div id="container"></div>
     </div>
+
     <div id="btnbox"></div>
   </body>
   <script src="./discover.js"></script>
 </html>
+

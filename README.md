@@ -5,7 +5,7 @@
 
 # SARTHI TRAVEL
 
-SARTHI TRAVEL is a for a travel agency. The website contains details about tourist destinations, tour packages. This website allow people to book their dream destination with in their budgets.
+SARTHI TRAVEL is a website for a travel agency. The website contains details about tourist destinations, tour packages. This website allow people to book their dream destination with in their budgets.
 
 # Deployed Link
 

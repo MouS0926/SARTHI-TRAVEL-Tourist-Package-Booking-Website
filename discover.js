@@ -118,7 +118,7 @@ ratingBtn.addEventListener("change", function () {
   if (ratingBtn.value == "") {
     display(data);
   } else {
-    let rate = data.filter(function (element, index) {
+    let rate = data.filter(function (element) {
       if (Number(element.rating / 20) < Number(ratingBtn.value)) {
         return true;
       } else {

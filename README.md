@@ -1,11 +1,11 @@
+<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/image/logo-no-background.png"  width="300" >
 
-![Logo](https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/image/logo-no-background.png?raw=true)
 
 
 
 # SARTHI TRAVEL
 
-SARTHI TRAVEL is a for a travel agency. The website contains details about tourist destinations, tour packages. This website allow people to book their dream destination with in their budgets.
+SARTHI TRAVEL is a website for a travel agency. The website contains details about tourist destinations, tour packages. This website allow people to book their dream destination with in their budgets.
 
 # Deployed Link
 
@@ -30,7 +30,7 @@ User Features :
 
 Admin Features :
 - Destination management
-- Booking management
+- Booking Details
 
 
 ## Run Locally
@@ -68,3 +68,9 @@ Run Server
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+## Contributors
+
+- [Moumita Sarkar](https://github.com/MouS0926)
+- [Akash Jaiswal](https://github.com/skyjais)
+- [Vijay Dodiya](https://github.com/dodiya0107)
+- [Narendra Patel](https://github.com/Narendra-patel-np)

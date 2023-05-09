@@ -2,9 +2,10 @@ let loginstatus = JSON.parse(localStorage.getItem("logStatus"))
 let username = localStorage.getItem("username")
 let logDiv = document.getElementById("logdiv")
 let registerDiv = document.getElementById("registerDiv")
+
 registerDiv.innerText = "Register"
 if (loginstatus == true) {
-    logDiv.innerText = username
+    logDiv.innerHTML = '<i class="fa-solid fa-user"></i> ' + username
     registerDiv.innerText = "Logout"
     registerDiv.setAttribute("href", "#")
     logDiv.setAttribute("href", "#")

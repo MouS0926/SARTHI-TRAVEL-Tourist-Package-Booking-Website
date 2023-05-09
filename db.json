@@ -223,14 +223,6 @@
       "id": "4"
     },
     {
-      "name": "Krabi",
-      "location": "Tropical Paradise in Thailand",
-      "image": "https://hblimg.mmtcdn.com/content/hubble/img/krabi/mmt/destination/m_krabi-landscape_l_400_640.jpg",
-      "rating": 63,
-      "price": 87,
-      "id": "5"
-    },
-    {
       "name": "Hanoi",
       "location": "Vietnam’s Culturally-Rich Capital City",
       "image": "https://hblimg.mmtcdn.com/content/hubble/img/hanoi/mmt/destination/m_destination_hanoi_landscape_l_341_546.jpg",
@@ -549,10 +541,13 @@
       "rating": 28,
       "price": 16,
       "id": "45"
+    },
+    {
+      "name": "Kashmir",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Neeulm_Valley_AJK_%28Arang_Kel%29.jpg/640px-Neeulm_Valley_AJK_%28Arang_Kel%29.jpg",
+      "location": "India",
+      "price": "345",
+      "id": "Mj1sVU4"
     }
   ]
 }
-
-    
-
-

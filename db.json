@@ -38,6 +38,107 @@
       "rating": 69,
       "price": 74,
       "id": "4"
+
+    },
+    {
+      "name": "Maldives",
+      "location": "A Stunning Tropical Getaway",
+      "city": "Agartala, Tripura, India",
+      "start": "2023-05-16",
+      "end": "2023-05-24",
+      "persons": "3",
+      "amount": "222",
+      "id": "EEjyAu4"
+    },
+    {
+      "name": "Krabi",
+      "location": "Tropical Paradise in Thailand",
+      "city": "Chandigarh, Chandigarh, India",
+      "start": "2023-05-12",
+      "end": "2023-05-20",
+      "persons": "2",
+      "amount": "174",
+      "id": "6hoVJpZ"
+    },
+    {
+      "name": "Bali",
+      "location": "Tropical Beach Paradise",
+      "city": "",
+      "start": "",
+      "end": "",
+      "persons": "",
+      "amount": "0",
+      "id": "J2a4p0S"
+    },
+    {
+      "name": "Paro",
+      "location": "Scenic Small Town in Bhutan",
+      "city": "",
+      "start": "",
+      "end": "",
+      "persons": "",
+      "amount": "0",
+      "id": "4OMIqvj"
+    },
+    {
+      "name": "Maldives",
+      "location": "A Stunning Tropical Getaway",
+      "city": "",
+      "start": "",
+      "end": "",
+      "persons": "2",
+      "amount": "1480",
+      "id": "cffujWi"
+    },
+    {
+      "name": "Istanbul",
+      "location": "Gateway to Europe",
+      "city": "",
+      "start": "",
+      "end": "",
+      "persons": "",
+      "amount": "0",
+      "id": "fLFm2FE"
+    },
+    {
+      "name": "Hanoi",
+      "location": "Vietnam’s Culturally-Rich Capital City",
+      "city": "",
+      "start": "",
+      "end": "",
+      "persons": "",
+      "amount": "0",
+      "id": "QgWHFnd"
+    },
+    {
+      "name": "Hanoi",
+      "location": "Vietnam’s Culturally-Rich Capital City",
+      "city": "",
+      "start": "",
+      "end": "",
+      "persons": "",
+      "amount": "0",
+      "id": "ZZh4l3g"
+    },
+    {
+      "name": "Hanoi",
+      "location": "Vietnam’s Culturally-Rich Capital City",
+      "city": "",
+      "start": "",
+      "end": "",
+      "persons": "",
+      "amount": "0",
+      "id": "zCSkahH"
+    },
+    {
+      "name": "Barcelona",
+      "location": "capital of Spain's Catalonia region",
+      "city": "",
+      "start": "",
+      "end": "",
+      "persons": "",
+      "amount": "0",
+      "id": "Lx9tVT7"
     }
   ],
   "users": [
@@ -70,13 +171,13 @@
       "email": "rk@mail.com",
       "passward": "4321",
       "id": 172003
-    },
+ },
     {
       "name": "Aniket Das",
       "email": "ad@mail.com",
       "passward": "890",
       "id": 172004
-    }
+}
   ],
   "destinations": [
     {

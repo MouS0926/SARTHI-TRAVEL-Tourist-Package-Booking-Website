@@ -139,6 +139,7 @@ destinationCreateBtn.addEventListener("click", () => {
 });
 
 //  update products
+let updateDestinationIdInput = document.getElementById("update-product-id");
 let updateDestinationNameInput = document.getElementById("update-product-name");
 let updateDestinationImgInput = document.getElementById("update-product-image");
 let updateDestinationBrandInput = document.getElementById(
@@ -158,6 +159,7 @@ function updateAllPopulateProduct(changeid) {
         .then((data) => {
             console.log(data);
             // Populate the input fields with the extracted values
+            updateDestinationIdInput.value = data.id;
             updateDestinationNameInput.value = data.name;
             updateDestinationImgInput.value = data.image;
             updateDestinationBrandInput.value = data.location;
@@ -171,17 +173,21 @@ function updateAllPopulateProduct(changeid) {
 // function changeUpdatesProducts() {
 updateDestinationCreateBtn.addEventListener("click", function(e) {
     e.preventDefault();
+    let updateDestinationId = updateDestinationIdInput.value;
     let updateproductName = updateDestinationNameInput.value;
     let updateproductImg = updateDestinationImgInput.value;
     let updateproductBrand = updateDestinationBrandInput.value;
     let updateproductPrice = updateDestinationPriceInput.value;
 
     let newUpdatedProductObj = {
+        id: updateDestinationId,
         name: updateproductName,
         image: updateproductImg,
         location: updateproductBrand,
         price: updateproductPrice,
     };
+    let changeid = updateDestinationId;
+    console.log(changeid);
 
     fetch(`http://localhost:9971/destinations/${changeid}`, {
             method: "PATCH",

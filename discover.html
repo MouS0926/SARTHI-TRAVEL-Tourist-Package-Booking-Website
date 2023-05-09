@@ -162,6 +162,41 @@
             border: 1.5px solid rgb(8, 163, 187);
             background-color: white;
         }
+        
+        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            #box {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+            }
+            #filter {
+                width: 75%;
+                height: 200px;
+                margin-bottom: 10px;
+            }
+            #filter>select {
+                padding: 6px;
+                margin: 1px;
+                margin-bottom: 16px;
+                border: 1px solid teal;
+            }
+            #filter>label {
+                color: teal;
+                font-size: 15px;
+            }
+            #btnDiv>input {
+                padding: 5px;
+                width: 100%;
+                margin-left: 0;
+            }
+            #container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 30px;
+                width: 75%;
+                margin: auto;
+            }
+        }
     </style>
 </head>
 

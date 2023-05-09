@@ -187,6 +187,12 @@
       "email": "ad@mail.com",
       "passward": "890",
       "id": 172004
+    },
+    {
+      "name": "Ritika Roy",
+      "email": "rr@mail.com",
+      "passward": "1234",
+      "id": 172005
     }
   ],
   "destinations": [
@@ -195,7 +201,7 @@
       "location": "Scenic Small Town in Bhutan",
       "image": "https://hblimg.mmtcdn.com/content/hubble/img/paro/mmt/destination/m_paro-landscape_l_400_640.jpg",
       "rating": 70,
-      "price": 73,
+      "price": "75",
       "id": "1"
     },
     {
@@ -203,7 +209,7 @@
       "location": "Tropical Beach Paradise",
       "image": "https://hblimg.mmtcdn.com/content/hubble/img/bali/mmt/destination/m_bali_l_393_629.jpg",
       "rating": 97,
-      "price": 97,
+      "price": "97",
       "id": "2"
     },
     {
@@ -211,7 +217,7 @@
       "location": "Fun-Packed Beach Destination in Sri Lanka",
       "image": "https://hblimg.mmtcdn.com/content/hubble/img/bentota/mmt/destination/m_bentota-landscape_l_400_640.jpg",
       "rating": 50,
-      "price": 63,
+      "price": "64",
       "id": "3"
     },
     {

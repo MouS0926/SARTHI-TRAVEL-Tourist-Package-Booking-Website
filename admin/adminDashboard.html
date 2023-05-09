@@ -1,143 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="adminDashboard.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <aside>
-        <div class="top">
-          <div class="logo">
-            <img src="../logo-no-background.png" alt="" />
-            <h2>Sar<span class="danger">thi</span></h2>
-          </div>
-          <div class="close" id="close-btn">
-            <span class="material-icons"> close </span>
-          </div>
-        </div>
-        <div class="sidebar">
-          <a href="#">
-            <span class="material-icons">dashboard</span>
-            <h3>Dashboard</h3>
-          </a>
-          <a href="customer.html">
-            <span class="material-icons">perm_identity</span>
-            <h3>Visitors</h3>
-          </a>
-          <a href="#">
-            <span class="material-icons">inventory</span>
-            <h3>Destinations</h3>
-          </a>
-          <a href="#">
-            <span class="material-icons">report</span>
-            <h3>Reports</h3>
-          </a>
-          <a href="#">
-            <span class="material-icons">settings</span>
-            <h3>Settings</h3>
-          </a>
-          <a href="admin.html">
-            <span class="material-icons">add</span>
-            <h3>Add More Destinations</h3>
-          </a>
-          <a href="../index.html">
-            <span class="material-icons">logout</span>
-            <h3 id="logout">Logout</h3>
-          </a>
-        </div>
-      </aside>
-      <main>
-        <h1>Dashboard</h1>
-
-        <div class="date">
-          <input type="date" />
-        </div>
-
-        <div class="insights">
-          <div class="sales">
-            <span class="material-icons">insert_chart</span>
-            <div class="middle">
-              <div class="left">
-                <h3>Total Visitors</h3>
-                <h1 id="total-deals">0000</h1>
-              </div>
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <!-- <img src="../logo-no-background.png" alt="" /> -->
+                    <h2>Sar<span class="danger">thi</span> Travel</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons"> close </span>
+                </div>
             </div>
-          </div>
-          <!-- --------------------------------------- -->
-          <div class="expenses">
-            <span class="material-icons">bar_chart</span>
-            <div class="middle">
-              <div class="left">
-                <h3>Total Profit</h3>
-                <h1 id="total-sale">0000</h1>
-              </div>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="customer.html">
+                    <span class="material-icons">perm_identity</span>
+                    <h3>Visitors</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">inventory</span>
+                    <h3>Destinations</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">report</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="admin.html">
+                    <span class="material-icons">add</span>
+                    <h3>Add More Destinations</h3>
+                </a>
+                <a href="../index.html">
+                    <span class="material-icons">logout</span>
+                    <h3 id="logout">Logout</h3>
+                </a>
             </div>
-          </div>
-          <!-- ----------------------------------- -->
-          <div class="income">
-            <span class="material-icons">stacked_line_chart</span>
-            <div class="middle">
-              <div class="left">
-                <h3>Total Income</h3>
-                <h1 id="income">0000</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="recent-orders" >
-          <h2>Visitors</h2>
-          <div class="card-list" id="adminSiteBoxId" >
-            <!-- append the data -->
-        </div>
-      
-      </main>
-      <!-- ---------------------------------------- -->
+        </aside>
+        <main>
+            <h1>Dashboard</h1>
 
-      <div class="right">
-        <div class="top">
-          <button id="menu-btn">
+            <div class="date">
+                <input type="date" />
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons">insert_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Visitors</h3>
+                            <h1 id="total-deals">0000</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------- -->
+                <div class="expenses">
+                    <span class="material-icons">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Profit</h3>
+                            <h1 id="total-sale">0000</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------------------- -->
+                <div class="income">
+                    <span class="material-icons">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1 id="income">0000</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-orders">
+                <h2>Visitors</h2>
+                <div class="card-list" id="adminSiteBoxId">
+                    <!-- append the data -->
+                </div>
+
+        </main>
+        <!-- ---------------------------------------- -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
             <span class="material-icons">menu</span>
           </button>
-          <div class="theme-toggler">
-            <span class="material-icons active">light_mode</span>
-            <span class="material-icons">dark_mode</span>
-          </div>
-          <div class="profile">
-            <div class="info">
-              <p>Hey,<b>Admin</b></p>
-              <!-- <small class="text-muted">Admin</small> -->
+                <div class="theme-toggler">
+                    <span class="material-icons active">light_mode</span>
+                    <span class="material-icons">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey,<b>Admin</b></p>
+                        <!-- <small class="text-muted">Admin</small> -->
+                    </div>
+                    <div class="profile-photo">
+                        <img src="" alt="" />
+                    </div>
+                </div>
             </div>
-            <div class="profile-photo">
-              <img src="" alt="" />
+            <!-- ----------------- -->
+
+            <!-- ---------------------------------- -->
+            <div class="sales-analytics">
+                <h2>Hey Admin</h2>
+
+                <div class="item add-product">
+                    <a href="admin.html">
+                        <div>
+                            <span class="material-icons">add</span>
+                            <h3>Add Destination</h3>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-        <!-- ----------------- -->
-
-        <!-- ---------------------------------- -->
-        <div class="sales-analytics">
-          <h2>Hey Admin</h2>
-
-          <div class="item add-product">
-            <a href="admin.html"
-              ><div>
-                <span class="material-icons">add</span>
-                <h3>Add Destination</h3>
-              </div></a
-            >
-          </div>
         </div>
-      </div>
-    </div>
 
-    <script src="adminDashboard.js"></script>
-  </body>
+        <script src="adminDashboard.js"></script>
+</body>
+
 </html>

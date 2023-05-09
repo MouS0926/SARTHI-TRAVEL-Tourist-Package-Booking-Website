@@ -1,47 +1,3 @@
-// fetch("http://localhost:1999/products")
-//   .then((res) => {
-//     return res.json();
-//   })
-//   .then((json) => {
-//     console.log(json);
-//     getCard(json);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
-
-// function getCard(makeCardArr) {
-//   let x = "";
-//   makeCardArr.map((item) => {
-//     x += `
-//       <div class="card-list">
-//         <div class="card" data-id="${item.id}">
-//           <div class="card-img">
-//             <img src="${item.image}" alt="image_error" />
-//           </div>
-//           <div class="card-body">
-//             <div class="card-title">${item.name}</div>
-//             <div class="card-title">₹ ${item.price}</div>
-//             <div class="card-location">${item.location}</div>
-//             <a href="#" data-id="${item.id}" class="card-link">Edit</a>
-//             <a href="#" data-id="${item.id}" class="card-link-del">Delete</a>
-//           </div>
-//         </div>
-//       </div>`;
-//   });
-//   mainSection.innerHTML = x;
-
-//   const editLink = document.querySelectorAll(".card-link");
-//   editLink.forEach((elementbtn) => {
-//     elementbtn.addEventListener("click", (event) => {
-//       event.preventDefault();
-//       console.log(event.target.dataset.id);
-//       let id = event.target.dataset.id;
-//       updateAllPopulate(id);
-//     });
-//   });
-// }
-
 window.addEventListener("load", () => {
   fetchProduct();
 });
@@ -85,12 +41,12 @@ function renderCards(users) {
     name.textContent = user.name;
     boxdetails.appendChild(name);
 
-    const brand = document.createElement("p");
-    brand.textContent = `${user.location}`;
-    boxdetails.appendChild(brand);
+    const location = document.createElement("p");
+    location.textContent = `${user.location}`;
+    boxdetails.appendChild(location);
 
     const price = document.createElement("p");
-    price.textContent = `Price: ${user.price}`;
+    price.textContent = `Price: ₹${user.price * 10}`;
     boxdetails.appendChild(price);
 
     const btnDiv = document.createElement("div");
@@ -124,6 +80,7 @@ function renderCards(users) {
     aTag.innerText = "Edit";
 
     editIcon.addEventListener("click", function (e) {
+      e.preventDefault();
       const editLink = document.querySelectorAll(".cardLink");
       console.log(editLink);
       editLink.forEach((elementbtn) => {
@@ -146,33 +103,27 @@ function renderCards(users) {
 }
 
 //  add products
-let productNameInput = document.getElementById("product-name");
-let productImgInput = document.getElementById("product-image");
-let productDescInput = document.getElementById("product-desc");
-let productBrandInput = document.getElementById("product-brand");
-let productPriceInput = document.getElementById("product-price");
-let productCategoryInput = document.getElementById("product-category");
-let productCreateBtn = document.getElementById("add-product");
+let destinationNameInput = document.getElementById("product-name");
+let destinationImgInput = document.getElementById("product-image");
+let destinationLocationInput = document.getElementById("product-brand");
+let destinationPriceInput = document.getElementById("product-price");
+let destinationCreateBtn = document.getElementById("add-product");
 
-productCreateBtn.addEventListener("click", () => {
-  let productName = productNameInput.value;
-  let productImg = productImgInput.value;
-  let productDesc = productDescInput.value;
-  let productBrand = productBrandInput.value;
-  let productPrice = productPriceInput.value;
-  let productCategory = productCategoryInput.value;
+destinationCreateBtn.addEventListener("click", () => {
+  let destinationName = destinationNameInput.value;
+  let destinationImg = destinationImgInput.value;
+  let destinationLocation = destinationLocationInput.value;
+  let destinationPrice = destinationPriceInput.value;
 
   let newEmpObj = {
-    name: productName,
-    image: productImg,
-    desc: productDesc,
-    location: productBrand,
-    price: productPrice,
-    category: productCategory,
+    name: destinationName,
+    image: destinationImg,
+    location: destinationLocation,
+    price: destinationPrice,
   };
 
   console.log(newEmpObj);
-  fetch("http://localhost:99/destinations", {
+  fetch("http://localhost:9971/destinations", {
     method: "POST",
     body: JSON.stringify(newEmpObj),
     headers: {
@@ -189,15 +140,15 @@ productCreateBtn.addEventListener("click", () => {
 });
 
 //  update products
-let updateproductNameInput = document.getElementById("update-product-name");
-let updateproductImgInput = document.getElementById("update-product-image");
-let updateproductDescInput = document.getElementById("update-product-desc");
-let updateproductBrandInput = document.getElementById("update-product-brand");
-let updateproductPriceInput = document.getElementById("update-product-price");
-let updateproductCategoryInput = document.getElementById(
-  "update-product-category"
+let updateDestinationNameInput = document.getElementById("update-product-name");
+let updateDestinationImgInput = document.getElementById("update-product-image");
+let updateDestinationBrandInput = document.getElementById(
+  "update-product-brand"
 );
-let updateproductCreateBtn = document.getElementById("update-product");
+let updateDestinationPriceInput = document.getElementById(
+  "update-product-price"
+);
+let updateDestinationCreateBtn = document.getElementById("update-product");
 
 function updateAllPopulateProduct(changeid) {
   console.log(changeid);
@@ -208,12 +159,10 @@ function updateAllPopulateProduct(changeid) {
     .then((data) => {
       console.log(data);
       // Populate the input fields with the extracted values
-      updateproductNameInput.value = data.name;
-      updateproductImgInput.value = data.image;
-      updateproductDescInput.value = data.desc;
-      updateproductBrandInput.value = data.location;
-      updateproductPriceInput.value = data.price;
-      updateproductCategoryInput.value = data.category;
+      updateDestinationNameInput.value = data.name;
+      updateDestinationImgInput.value = data.image;
+      updateDestinationBrandInput.value = data.location;
+      updateDestinationPriceInput.value = data.price;
     })
     .catch((error) => {
       console.log(error);
@@ -221,25 +170,21 @@ function updateAllPopulateProduct(changeid) {
 }
 
 // function changeUpdatesProducts() {
-updateproductCreateBtn.addEventListener("click", function (e) {
+updateDestinationCreateBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  let updateproductName = updateproductNameInput.value;
-  let updateproductImg = updateproductImgInput.value;
-  let updateproductDesc = updateproductDescInput.value;
-  let updateproductBrand = updateproductBrandInput.value;
-  let updateproductPrice = updateproductPriceInput.value;
-  let updateproductCategory = updateproductCategoryInput.value;
+  let updateproductName = updateDestinationNameInput.value;
+  let updateproductImg = updateDestinationImgInput.value;
+  let updateproductBrand = updateDestinationBrandInput.value;
+  let updateproductPrice = updateDestinationPriceInput.value;
 
   let newUpdatedProductObj = {
     name: updateproductName,
     image: updateproductImg,
-    desc: updateproductDesc,
     location: updateproductBrand,
     price: updateproductPrice,
-    category: updateproductCategory,
   };
 
-  fetch(`http://localhost:1999/products/${changeid}`, {
+  fetch(`http://localhost:9971/destinations/${changeid}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -260,7 +205,7 @@ updateproductCreateBtn.addEventListener("click", function (e) {
 
 let sortProductLowtoHigh = document.getElementById("sort-low-to-high");
 sortProductLowtoHigh.addEventListener("click", function () {
-  fetch(`http://localhost:1999/products/?_sort=price,views&_order=asc`)
+  fetch(`http://localhost:9971/destinations/?_sort=price,views&_order=asc`)
     .then((response) => {
       return response.json();
     })
@@ -275,7 +220,8 @@ sortProductLowtoHigh.addEventListener("click", function () {
 
 let sortProductHightoLow = document.getElementById("sort-high-to-low");
 sortProductHightoLow.addEventListener("click", () => {
-  fetch(`http://localhost:1999/products/?_sort=price,views&_order=desc`)
+  console.log("low");
+  fetch(`http://localhost:9971/destinations?_sort=price,views&_order=desc`)
     .then((res) => res.json())
     .then((productData) => {
       renderCards(productData);
@@ -312,7 +258,7 @@ sortProductHightoLow.addEventListener("click", () => {
 searchInput.addEventListener("input", function (e) {
   const searchQuery = e.target.value.toLowerCase().trim();
 
-  fetch("http://localhost:1999/products")
+  fetch("http://localhost:9971/destinations")
     .then((response) => {
       return response.json();
     })
@@ -332,8 +278,7 @@ function searchUsersByName(users, searchQuery) {
     return users.filter(
       (user) =>
         user.name.toLowerCase().includes(searchQuery) ||
-        user.location.toLowerCase().includes(searchQuery) ||
-        user.category.toLowerCase().includes(searchQuery)
+        user.location.toLowerCase().includes(searchQuery)
     );
   }
 }

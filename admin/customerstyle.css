@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fdb;
+  color: #fa0;
+}
+h2 {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+p {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  p {
+    font-size: 12px;
+  }
+}
+table {
+  display: table;
+  width: 80%;
+  margin: auto;
+  background-color: black;
+}
+tr {
+  background-color: #555;
+  border-collapse: none;
+}
+tr:nth-child(odd) {
+  background-color: #777;
+  border-collapse: none;
+}
+th {
+  width: 33.33%;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+}
+td {
+  width: 33.33%;
+  padding: 5px 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  table {
+    width: 80%;
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 1px solid #000;
+  }
+}
+.select {
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 60px;
+  padding: 5px;
+  background-color: #fa7;
+  color: #000;
+  font-weight: 700;
+  border: 1px solid #000;
+  border-radius: 6px;
+  text-align: center;
+}
+.select:active {
+  background-color: #f96;
+}
+.details {
+  display: none;
+  width: 80%;
+  min-height: 85vh;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #d00;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #fa0;
+}
+@media (max-width: 600px) {
+  .details {
+    width: 80%;
+  }
+}
+#close {
+  float: right;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fa0;
+  color: #fa0;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  #close {
+    width: 75px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+.notes {
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #fa0;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  .notes {
+    width: 90%;
+    font-size: 12px;
+  }
+  .notes h2 {
+    font-size: 18px;
+  }
+}
+a.website {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 5px 20px;
+  background-color: #ffffff;
+  border: 3px solid #80a0c0;
+  color: #6080a0;
+}

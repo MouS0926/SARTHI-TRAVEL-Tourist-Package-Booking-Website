@@ -1,5 +1,4 @@
 {
-
   "admin": [
     {
       "id": 102030,
@@ -139,6 +138,17 @@
       "persons": "",
       "amount": "0",
       "id": "Lx9tVT7"
+    },
+    {
+      "name": "Tokyo",
+      "location": "A Bustling Metropolis in Japan",
+      "image": "https://hblimg.mmtcdn.com/content/hubble/img/tokyo/mmt/destination/m_Tokyo_l_466_697.jpg",
+      "city": "Bengaluru, Karnataka, India",
+      "start": "2023-05-09",
+      "end": "2023-05-16",
+      "persons": "1",
+      "amount": "610",
+      "id": "Pl4aoDU"
     }
   ],
   "users": [
@@ -172,7 +182,6 @@
       "passward": "4321",
       "id": 172003
     },
-
     {
       "name": "Aniket Das",
       "email": "ad@mail.com",

@@ -66,7 +66,7 @@ Run Server
 
 ## Project Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/Landing.jpeg"  width="300" >
 
 ## Contributors
 

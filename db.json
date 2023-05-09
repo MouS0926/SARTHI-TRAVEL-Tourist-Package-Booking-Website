@@ -38,7 +38,7 @@
       "rating": 69,
       "price": 74,
       "id": "4"
- },
+    },
     {
       "name": "Maldives",
       "location": "A Stunning Tropical Getaway",
@@ -138,7 +138,6 @@
       "persons": "",
       "amount": "0",
       "id": "Lx9tVT7"
-
     }
   ],
   "users": [
@@ -171,17 +170,14 @@
       "email": "rk@mail.com",
       "passward": "4321",
       "id": 172003
+    },
 
-    }
-
- },
     {
       "name": "Aniket Das",
       "email": "ad@mail.com",
       "passward": "890",
       "id": 172004
-}
-
+    }
   ],
   "destinations": [
     {

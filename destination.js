@@ -32,6 +32,7 @@ bookBtn.addEventListener("click", function () {
     body: JSON.stringify({
       name: `${place.innerText}`,
       location: `${position.innerText}`,
+      image: `${destination[0].image}`,
       city: `${from.value}`,
       start: `${startDate.value}`,
       end: `${endDate.value}`,

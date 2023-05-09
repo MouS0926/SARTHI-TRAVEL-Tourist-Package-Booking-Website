@@ -14,6 +14,8 @@
         padding-top: 100px;
         background-color: white;
         width: 20%;
+        height: 337px;
+        border-radius: 12px;
         margin-left: 30px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         /* border: 1px solid red; */
@@ -28,6 +30,7 @@
         color: teal;
         font-size: 22px;
         padding: 10px;
+        /* margin: auto; */
         margin-top: 30px;
       }
       #btnDiv {
@@ -93,12 +96,32 @@
       #travelImg > img {
         width: 100%;
       }
+      #btnbox {
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 70px;
+      }
       body {
         box-sizing: border-box;
         background-color: #efefef;
       }
+      /* #btnbox {
+        /* border: 1px solid red; */
+      /* width: 100%;
+        padding: 10px; */
+      /* margin-bottom: 70px; */
+      /* } */
+      #btnbox > button {
+        width: 30px;
+        border: 1.5px solid rgb(8, 163, 187);
+        background-color: white;
+      }
     </style>
   </head>
+
   <body>
     <div id="travelImg">
       <img
@@ -110,7 +133,7 @@
     <div id="btnDiv">
       <button id="increase">Price -⬆️</button>
       <button id="decrease">Price -⬇️</button>
-      <input type="text" placeholder="Search for Location" />
+      <input type="text" id="searchBar" placeholder="Search for Location" />
     </div>
     <div id="box">
       <div id="filter">
@@ -127,12 +150,14 @@
         <br />
         <select name="" id="ratingSelect">
           <option value="">Select price range</option>
-          <option value="3">below 3</option>
-          <option value="5">above 3</option>
+          <option value="3">below 2</option>
+          <option value="5">below 4</option>
         </select>
       </div>
       <div id="container"></div>
     </div>
+
+    <div id="btnbox"></div>
   </body>
   <script src="./discover.js"></script>
 </html>

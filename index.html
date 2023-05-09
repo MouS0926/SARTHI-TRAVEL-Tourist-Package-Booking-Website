@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>SARTHI TRAVEL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="">
 
+    <link rel="icon" type="image/x-icon" href="image/Sarthi-favicon.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,16 +41,18 @@
             <div class="collapse navbar-collapse float-xl-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Discover</a>
+
+                        <a class="nav-link" aria-current="page" href="./discover.html">Discover</a>
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="service.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Community</a>
+                        <a class="nav-link" href="blog.html">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
 
 
@@ -88,25 +90,26 @@
 
 
                     <div class="searchBox">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <!-- <i class="fa fa-map-marker" aria-hidden="true"></i>
                         <select name="" id="">
                             <option value="">Location</option>
                             <option value=""></option>
                         </select> &nbsp;&nbsp;
                         <i class="fa fa-calendar" aria-hidden="true"></i>
 
-
-
                         <input type="date" name="" id="">
+                        <button class="btn btn-primary reg-btn">Search</button> -->
 
 
-
-
-
-
-                        <button class="btn btn-primary reg-btn">Search</button>
+                        <div class="indexBtn">
+                            <a href="blog.html" class="btn btn-primary reg-btn">Latest Blogs</a>
+                            <a href="discover.html" class="btn btn-primary reg-btn">Discover New places</a>
+                        </div>
                     </div>
+
+
                 </div>
+
 
 
 
@@ -130,20 +133,20 @@
         <div class="container">
             <section id="demos">
 
-                <h1 class="fw-bolder">FIND <span>POPULAR</span></h1>
-                <h1 class="fw-bolder">DESTINATION</h1>
-                <div class="owl-carousel owl-theme" id="desti">
+                <h1 class="fw-bolder wow animate__animated animate__fadeInDown">FIND <span>POPULAR</span></h1>
+                <h1 class="fw-bolder wow animate__animated animate__fadeInDown">DESTINATION</h1>
+                <div class="owl-carousel owl-theme wow animate__animated animate__fadeIn" id="desti">
 
-                    <div class="item card popCard">
+                    <div class="item card popCard ">
 
                         <div class="">
-                            <img src="https://media.timeout.com/images/105658195/image.jpg" alt="">
-                            <h3>Package Title</h3>
-                            <p>Delhi,India</p>
+                            <img src="image/popular-img/Amsterdam.jpg" alt="">
+                            <h3>Amsterdam</h3>
+                            <p>Netherlands</p>
 
                             <div class="price-box">
-                                <p>$20/person</p>
-                                <div class="btn btn-primary bookBtn">Book</div>
+                                <p><span>₹ 210</span>/person</p>
+                                <a href="discover.html" class="btn btn-primary bookBtn">View More</a>
                             </div>
                         </div>
 
@@ -151,49 +154,72 @@
                     </div>
 
                     <div class="item card popCard">
-                        <img src="https://media.timeout.com/images/105658195/image.jpg" alt="">
-                        <h3>Package Title</h3>
-                        <p>Delhi,India</p>
+                        <img src="image/popular-img/bali.jpg" alt="">
+                        <h3>Bali</h3>
+                        <p>Tropical Beach Paradise</p>
 
                         <div class="price-box">
-                            <p>$20/person</p>
-                            <div class="btn btn-primary bookBtn">Book</div>
+                            <p><span>₹ 2000</span>/person</p>
+                            <a href="discover.html" class="btn btn-primary bookBtn">View More</a>
                         </div>
                     </div>
 
 
                     <div class="item card popCard">
-                        <img src="https://media.timeout.com/images/105658195/image.jpg" alt="">
-                        <h3>Package Title</h3>
-                        <p>Delhi,India</p>
+                        <img src="image/popular-img/darjeeling.jpg" alt="">
+                        <h3>Darjeeling</h3>
+                        <p>West Bengal, India</p>
 
                         <div class="price-box">
-                            <p>$20/person</p>
-                            <div class="btn btn-primary bookBtn">Book</div>
+                            <p><span>₹ 5000</span>/person</p>
+                            <a href="discover.html" class="btn btn-primary bookBtn">View More</a>
                         </div>
                     </div>
 
 
                     <div class="item card popCard">
-                        <img src="https://media.timeout.com/images/105658195/image.jpg" alt="">
-                        <h3>Package Title</h3>
-                        <p>Delhi,India</p>
+                        <img src="image/popular-img/Jaisalmer.jpg" alt="">
+                        <h3>Jaisalmer</h3>
+                        <p>Rajasthan, India</p>
 
                         <div class="price-box">
-                            <p>$20/person</p>
-                            <div class="btn btn-primary bookBtn">Book</div>
+                            <p><span>₹ 1000</span>/person</p>
+                            <a href="discover.html" class="btn btn-primary bookBtn">View More</a>
                         </div>
                     </div>
 
 
                     <div class="item card popCard">
-                        <img src="https://media.timeout.com/images/105658195/image.jpg" alt="">
-                        <h3>Package Title</h3>
-                        <p>Delhi,India</p>
+                        <img src="image/popular-img/maldives.jpg" alt="">
+                        <h3>Maldives</h3>
+                        <p>A Stunning Tropical Getaway</p>
 
                         <div class="price-box">
-                            <p>$20/person</p>
-                            <div class="btn btn-primary bookBtn">Book</div>
+                            <p><span>₹ 740</span>/person</p>
+                            <a href="discover.html" class="btn btn-primary bookBtn">View More</a>
+                        </div>
+                    </div>
+
+                    <div class="item card popCard">
+                        <img src="image/popular-img/paris.jpg" alt="">
+                        <h3>Paris</h3>
+                        <p>France</p>
+
+                        <div class="price-box">
+                            <p><span>₹ 520</span>/person</p>
+                            <a href="discover.html" class="btn btn-primary bookBtn">View More</a>
+                        </div>
+                    </div>
+
+
+                    <div class="item card popCard">
+                        <img src="image/popular-img/pattaya.jpg" alt="">
+                        <h3>Pattaya</h3>
+                        <p>the Gulf of Thailand</p>
+
+                        <div class="price-box">
+                            <p><span>₹ 840</span>/person</p>
+                            <a href="discover.html" class="btn btn-primary bookBtn">View More</a>
                         </div>
                     </div>
 
@@ -215,25 +241,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="image/Boy-Picture-2.png" alt="">
+                    <img src="image/Boy-Picture-2.png" alt="" class="wow animate__animated animate__fadeInLeft">
                 </div>
                 <div class="col-md-6">
 
-                    <h1 class="fw-bolder">OUR <span>STORIES</span> WITH</h1>
-                    <h1 class="fw-bolder">ADVENTURES</h1>
-                    <p>We are experienced in bringing adventures to start their journey; all outdoor destinations in the world are our specialties.</p>
-                    <p>So don’t hesitate to start your adventure right now; nature has already called you!​</p>
+                    <h1 class="fw-bolder wow animate__animated animate__zoomIn">OUR <span>STORIES</span> WITH</h1>
+                    <h1 class="fw-bolder wow animate__animated animate__zoomIn">ADVENTURES</h1>
+                    <p class="wow animate__animated animate__zoomIn">We are experienced in bringing adventures to start their journey; all outdoor destinations in the world are our specialties.</p>
+                    <p class="wow animate__animated animate__zoomIn">So don’t hesitate to start your adventure right now; nature has already called you!​</p>
 
                     <div class="numberBox">
-                        <div class="box">
+                        <div class="box wow animate__animated animate__bounceIn">
                             12K+
                             <p>Success Journy</p>
                         </div>
-                        <div class="box">
+                        <div class="box wow animate__animated animate__bounceIn">
                             16+
                             <p>Awards Winnings</p>
                         </div>
-                        <div class="box">
+                        <div class="box wow animate__animated animate__bounceIn">
                             20+
                             <p>Years of Experience </p>
                         </div>
@@ -245,6 +271,31 @@
     </section>
     <!--**************************** stories *****************-->
 
+    <section class="mapSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="fw-bolder wow animate__animated animate__zoomIn">START YOUR NEW <span>ADVENTURE</span> </h1>
+                    <h1 class="fw-bolder wow animate__animated animate__zoomIn">AROUND THE WORLD</h1>
+                    <p>There are still many amazing destinations</p>
+
+                    <p> scattered around the world, you should</p>
+
+                    <p> tryto visit all of them</p>
+                    <img src="image/map-img.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--========================== world-map ===========================-->
+
+
+    <!--========================== world-map-End ===========================-->
+
+
 
     <!--======================= adventure-about-us =====================-->
     <section class="storiesSection">
@@ -254,10 +305,10 @@
 
                 <div class="col-md-6">
 
-                    <h1 class="fw-bolder"> WHAT ADVENTURERS</h1>
-                    <h1 class="fw-bolder">SAY <span>ABOUT US</span></h1>
-                    <p>See and discover what adventurers tell us about thier journey with us, we always listen to whatever experience they have to say</p>
-                    <p>So don’t hesitate to start your adventure right now; nature has already called you!​</p>
+                    <h1 class="fw-bolder wow animate__animated animate__zoomIn"> WHAT ADVENTURERS</h1>
+                    <h1 class="fw-bolder wow animate__animated animate__zoomIn">SAY <span>ABOUT US</span></h1>
+                    <p class="wow animate__animated animate__zoomIn">See and discover what adventurers tell us about thier journey with us, we always listen to whatever experience they have to say</p>
+                    <p class="wow animate__animated animate__zoomIn">So don’t hesitate to start your adventure right now; nature has already called you!​</p>
 
 
 
@@ -266,7 +317,7 @@
                     <section id="demos">
 
 
-                        <div class="owl-carousel owl-theme" id="testimonial">
+                        <div class="owl-carousel owl-theme wow animate__animated animate__fadeInDown" id="testimonial">
 
                             <div class="item card popCard">
 
@@ -313,21 +364,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
                 </div>
 
 
                 <div class="col-md-6">
-                    <img src="image/girl.png" alt="">
+                    <img src="image/girl.png" alt="" class="wow animate__animated animate__fadeInLeft">
                 </div>
 
             </div>
@@ -337,20 +378,20 @@
 
 
     <!--=============== get-started-section ===================-->
-    <section class="getSection">
+    <section class="getSection owl-theme wow animate__animated animate__fadeIn">
 
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
 
                     <div class="getstarted">
-                        <h1 class="fw-bolder">GET STARTED WITH</h1>
-                        <h1 class="fw-bolder"><span>TRAVELIOUS</span></h1>
+                        <h1 class="fw-bolder owl-theme wow animate__animated animate__fadeInDown">GET STARTED WITH</h1>
+                        <h1 class="fw-bolder owl-theme wow animate__animated animate__fadeInDown"><span>TRAVELIOUS</span></h1>
                         <br>
-                        <p>Subscribe and find super attractive price quotes</p>
-                        <p>from us, we wait for you at the best destination</p>
+                        <p class="owl-theme wow animate__animated animate__fadeInDown">Subscribe and find super attractive price quotes</p>
+                        <p class="owl-theme wow animate__animated animate__fadeInDown">from us, we wait for you at the best destination</p>
 
-                        <div class="btn btn-primary start-btn">Get Started</div>
+                        <div class="btn btn-primary start-btn owl-theme wow animate__animated animate__bounceIn">Get Started</div>
 
                     </div>
 
@@ -368,7 +409,7 @@
 
 
 
-    <footer class="py-5">
+    <footer class="py-5 wow animate__animated animate__fadeIn">
         <div class="container">
             <div class="row">
 

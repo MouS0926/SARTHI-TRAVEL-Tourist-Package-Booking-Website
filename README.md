@@ -20,13 +20,13 @@ The main objective of the project is to create a picture perfect travel website 
 ## Features
 
 User Features :
-- Responsive Website
 - User Registration and Login
 - List Of Destination Packages 
 - Filter packages by price and rating
 - Sorting packages by price
 - Tour Packages Booking 
 - Place Pagination
+- Service Booking
 
 Admin Features :
 - Destination management
@@ -66,7 +66,17 @@ Run Server
 
 ## Project Screenshots
 
-<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/Landing.jpeg"  width="300" >
+Landing Page
+<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/Landing.jpeg"  width="600" >
+
+Service Page
+<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/Service.jpeg"  width="600" >
+
+All Destination Page
+<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/destination.jpeg"  width="600" >
+
+Booking Page
+<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/booking.jpeg"  width="600" >
 
 ## Contributors
 

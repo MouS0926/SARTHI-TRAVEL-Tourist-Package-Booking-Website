@@ -195,7 +195,7 @@
       "location": "Scenic Small Town in Bhutan",
       "image": "https://hblimg.mmtcdn.com/content/hubble/img/paro/mmt/destination/m_paro-landscape_l_400_640.jpg",
       "rating": 70,
-      "price": 73,
+      "price": "75",
       "id": "1"
     },
     {
@@ -211,7 +211,7 @@
       "location": "Fun-Packed Beach Destination in Sri Lanka",
       "image": "https://hblimg.mmtcdn.com/content/hubble/img/bentota/mmt/destination/m_bentota-landscape_l_400_640.jpg",
       "rating": 50,
-      "price": 63,
+      "price": "64",
       "id": "3"
     },
     {
@@ -552,7 +552,3 @@
     }
   ]
 }
-
-    
-
-

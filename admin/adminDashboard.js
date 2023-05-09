@@ -29,8 +29,8 @@ fetch(`http://localhost:9971/bookPlaces`)
     let adminDataAppend = document.getElementById("adminSiteBoxId");
     let x = "";
     data.forEach((visitor) => {
-      total += visitor.price;
-      let income = (visitor.price * 25) / 100;
+      total += visitor.price * 10;
+      let income = (visitor.price * 10 * 25) / 100;
       price += income;
       x += `
       <div class="card">
@@ -50,9 +50,9 @@ fetch(`http://localhost:9971/bookPlaces`)
     let dealsData = document.getElementById("total-deals");
     dealsData.innerText = data.length;
     let saleData = document.getElementById("total-sale");
-    saleData.innerText = price;
+    saleData.innerText = `₹${price}`;
     let incomeData = document.getElementById("income");
-    incomeData.innerText = total;
+    incomeData.innerText = `₹${total}`;
   });
 
 let logOut = document.getElementById("logout");

@@ -66,17 +66,17 @@ Run Server
 
 ## Project Screenshots
 
-Landing Page
+- Landing Page
 <img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/Landing.jpeg"  width="600" >
 
 Service Page
 <img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/Service.jpeg"  width="600" >
 
 All Destination Page
-<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/destination.jpeg"  width="600" >
+<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/destination.jpeg"  width="600">
 
 Booking Page
-<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/booking.jpeg"  width="600" >
+<img src="https://github.com/MouS0926/mountainous-sidewalk-9735/blob/master/Project-SS/booking.jpeg"  width="600">
 
 ## Contributors
 

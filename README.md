@@ -9,7 +9,7 @@ SARTHI TRAVEL is a website for a travel agency. The website contains details abo
 
 # Deployed Link
 
-[http](https://sarthitravel1.netlify.app/index.html)
+[Link: Sarthi Travel](https://sarthitravel1.netlify.app/index.html)
 ## Objectives
 The main objective of the project is to create a picture perfect travel website with basic functionality.
 ## Tech Stack

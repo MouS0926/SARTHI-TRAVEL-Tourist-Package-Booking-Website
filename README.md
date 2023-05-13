@@ -38,7 +38,7 @@ Admin Features :
 Clone the project
 
 ```bash
-  git clone https://github.com/letnagao/travel-website.git
+  git clone https://github.com/MouS0926/mountainous-sidewalk-9735.git
 ```
 
 Go to the project directory

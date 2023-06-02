@@ -10,7 +10,7 @@ const editInput = document.querySelector("#edit");
 
 async function fetchProduct() {
     try {
-        const response = await fetch("http://localhost:9971/destinations");
+        const response = await fetch("https://sarthi-api.onrender.com/destinations");
         const users = await response.json();
         renderCards(users);
         return users;
@@ -57,7 +57,7 @@ function renderCards(users) {
             let del_id = user.id;
             try {
                 const response = await fetch(
-                    `http://localhost:9971/destinations/${del_id}`, {
+                    `https://sarthi-api.onrender.com/destinations/${del_id}`, {
                         method: "DELETE",
                     }
                 );
@@ -122,7 +122,7 @@ destinationCreateBtn.addEventListener("click", () => {
     };
 
     console.log(newEmpObj);
-    fetch("http://localhost:9971/destinations", {
+    fetch("https://sarthi-api.onrender.com/destinations", {
             method: "POST",
             body: JSON.stringify(newEmpObj),
             headers: {
@@ -152,7 +152,7 @@ let updateDestinationCreateBtn = document.getElementById("update-product");
 
 function updateAllPopulateProduct(changeid) {
     console.log(changeid);
-    fetch(`http://localhost:9971/destinations/${changeid}`)
+    fetch(`https://sarthi-api.onrender.com/destinations/${changeid}`)
         .then((res) => {
             return res.json();
         })
@@ -189,7 +189,7 @@ updateDestinationCreateBtn.addEventListener("click", function(e) {
     let changeid = updateDestinationId;
     console.log(changeid);
 
-    fetch(`http://localhost:9971/destinations/${changeid}`, {
+    fetch(`https://sarthi-api.onrender.com/destinations/${changeid}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
@@ -210,7 +210,7 @@ updateDestinationCreateBtn.addEventListener("click", function(e) {
 
 let sortProductLowtoHigh = document.getElementById("sort-low-to-high");
 sortProductLowtoHigh.addEventListener("click", function() {
-    fetch(`http://localhost:9971/destinations/?_sort=price,views&_order=asc`)
+    fetch(`https://sarthi-api.onrender.com/destinations/?_sort=price,views&_order=asc`)
         .then((response) => {
             return response.json();
         })
@@ -226,7 +226,7 @@ sortProductLowtoHigh.addEventListener("click", function() {
 let sortProductHightoLow = document.getElementById("sort-high-to-low");
 sortProductHightoLow.addEventListener("click", () => {
     console.log("low");
-    fetch(`http://localhost:9971/destinations?_sort=price,views&_order=desc`)
+    fetch(`https://sarthi-api.onrender.com/destinations?_sort=price,views&_order=desc`)
         .then((res) => res.json())
         .then((productData) => {
             renderCards(productData);
@@ -263,7 +263,7 @@ sortProductHightoLow.addEventListener("click", () => {
 searchInput.addEventListener("input", function(e) {
     const searchQuery = e.target.value.toLowerCase().trim();
 
-    fetch("http://localhost:9971/destinations")
+    fetch("https://sarthi-api.onrender.com/destinations")
         .then((response) => {
             return response.json();
         })

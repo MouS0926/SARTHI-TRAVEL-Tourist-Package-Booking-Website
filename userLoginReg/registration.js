@@ -7,7 +7,7 @@ let regform = document.getElementById("regForm")
 
 
 function register() {
-    fetch(`http://localhost:9971/users`, {
+    fetch(`https://sarthi-api.onrender.com/users`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -37,7 +37,7 @@ function register() {
 
 regform.addEventListener("submit", function(e) {
     e.preventDefault()
-    fetch(`http://localhost:9971/users`)
+    fetch(`https://sarthi-api.onrender.com/users`)
         .then((res) => {
             return res.json()
         })

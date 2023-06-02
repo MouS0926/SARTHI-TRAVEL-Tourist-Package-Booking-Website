@@ -25,7 +25,7 @@ loginBtn.addEventListener("click", () => {
 
 function login(obj) {
     console.log(obj);
-    fetch("http://localhost:9971/admin", {
+    fetch("https://sarthi-api.onrender.com/admin", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

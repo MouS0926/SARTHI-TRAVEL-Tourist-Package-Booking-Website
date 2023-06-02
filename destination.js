@@ -27,7 +27,7 @@ let bookBtn = document.getElementById("bookBtn");
 bookBtn.addEventListener("click", function () {
   alert("Your booking is completed.Thank You");
 
-  fetch("http://localhost:9971/bookPlaces", {
+  fetch("https://sarthi-api.onrender.com/destinations", {
     method: "POST",
     body: JSON.stringify({
       name: `${place.innerText}`,

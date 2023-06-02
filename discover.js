@@ -7,7 +7,7 @@ fetching(1);
 
 function fetching(pageNum) {
     let info = fetch(
-        `http://localhost:9971/destinations?_limit=9&_page=${pageNum}`
+        `https://sarthi-api.onrender.com/destinations?_limit=9&_page=${pageNum}`
     );
     info
         .then(function(res) {

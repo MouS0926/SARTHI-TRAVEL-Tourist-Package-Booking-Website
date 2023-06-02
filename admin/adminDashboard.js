@@ -18,7 +18,7 @@ themeToggler.addEventListener("click", () => {
   themeToggler.querySelector("span:nth-child(2)").classList.toggle("active");
 });
 
-fetch(`http://localhost:9971/bookPlaces`)
+fetch(`https://sarthi-api.onrender.com/bookPlaces`)
   .then((res) => {
     return res.json();
   })

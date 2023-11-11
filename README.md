@@ -32,6 +32,9 @@ Admin Features :
 - Destination management
 - Booking Details
 
+Admin Credentials:
+User Id: admin
+Password: admin
 
 ## Run Locally
 
